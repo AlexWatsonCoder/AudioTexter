@@ -1,10 +1,10 @@
 {
-  "name": "electron-app",
+  "name": "AudioTexter",
   "version": "1.0.0",
-  "description": "An Electron application with Vue and TypeScript",
+  "description": "An application that uses Whisper to generate subtitles for media.",
   "main": "./out/main/index.js",
-  "author": "example.com",
-  "homepage": "https://electron-vite.org",
+  "author": "xiaod.me",
+  "homepage": "https://github.com/AlexWatsonCoder/AudioTexter",
   "scripts": {
     "format": "prettier --write .",
     "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts,.vue --fix",
@@ -12,17 +12,35 @@
     "typecheck:web": "vue-tsc --noEmit -p tsconfig.web.json --composite false",
     "typecheck": "npm run typecheck:node && npm run typecheck:web",
     "start": "electron-vite preview",
-    "dev": "electron-vite dev",
-    "build": "npm run typecheck && electron-vite build",
+    "dev": "NODE_ENV=development electron-vite dev",
+    "build": "electron-vite build",
     "postinstall": "electron-builder install-app-deps",
     "build:unpack": "npm run build && electron-builder --dir",
     "build:win": "npm run build && electron-builder --win",
     "build:mac": "npm run build && electron-builder --mac",
     "build:linux": "npm run build && electron-builder --linux"
   },
+  "build": {
+    "productName": "Audio Texter",
+    "appId": "org.AudioTexter",
+    "asarUnpack": [
+      "node_modules/ffmpeg-static-electron/bin/${os}/${arch}",
+      "node_modules/ffprobe-static-electron/bin/${os}/${arch}"
+    ]
+  },
   "dependencies": {
+    "@audapolis/webvtt-writer": "^1.0.6",
     "@electron-toolkit/preload": "^3.0.0",
-    "@electron-toolkit/utils": "^3.0.0"
+    "@electron-toolkit/utils": "^3.0.0",
+    "@types/fluent-ffmpeg": "^2.1.24",
+    "electron-dl": "^3.5.2",
+    "electron-log": "^5.1.1",
+    "fastq": "^1.17.1",
+    "ffmpeg-static-electron": "^2.0.3",
+    "ffprobe-static-electron": "^2.0.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "node-wav": "^0.0.2",
+    "smart-whisper": "^0.7.0"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config": "^1.0.2",

@@ -1,76 +1,37 @@
-<h1 align="center">electron-app</h1>
+> This project is currently in active development, and you may encounter bugs or unexpected behavior while using the application. We value your input as it helps us to improve the tool for everyone.
 
-<p align="center">An Electron application with Vue3 and TypesSript</p>
+## Media Subtitler with Whisper
 
-<p align="center">
-<img src="https://img.shields.io/github/package-json/dependency-version/alex8088/electron-vite-boilerplate/dev/electron" alt="electron-version">
-<img src="https://img.shields.io/github/package-json/dependency-version/alex8088/electron-vite-boilerplate/dev/electron-vite" alt="electron-vite-version" />
-<img src="https://img.shields.io/github/package-json/dependency-version/alex8088/electron-vite-boilerplate/dev/electron-builder" alt="electron-builder-version" />
-<img src="https://img.shields.io/github/package-json/dependency-version/alex8088/electron-vite-boilerplate/dev/vite" alt="vite-version" />
-<img src="https://img.shields.io/github/package-json/dependency-version/alex8088/electron-vite-boilerplate/dev/vue" alt="vue-version" />
-<img src="https://img.shields.io/github/package-json/dependency-version/alex8088/electron-vite-boilerplate/dev/typescript" alt="typescript-version" />
-</p>
+![AudioTexter Screenshot](./screenshot/screenshot.jpg)
 
-<p align='center'>
-<img src='./build/electron-vite-vue-ts.png'/>
-</p>
+This Media Subtitler application harnesses the power of [Whisper](https://openai.com/research/whisper), OpenAI's automatic speech recognition system, to generate accurate subtitles for a variety of media files. this application provides a user-friendly desktop experience for both Windows and macOS that simplifies the subtitling process.
 
-## Features
+### Features
 
-- 💡 Optimize asset handling
-- 🚀 Fast HMR for renderer processes
-- 🔥 Hot reloading for main process and preload scripts
-- 🔌 Easy to debug
-- 🔒 Compile to v8 bytecode to protect source code
+- **Whisper Integration**: Utilizes Whisper for high accuracy in speech-to-text transcription.
+- **Media Support**: Compatible with various media file formats.
+- **In-App Editor**: Edit and sync subtitles within the application.
+- **Customizable Model**: Adjust model settings according to your needs.
+- **Cross-Platform**: Runs on Windows and macOS.
 
-## Getting Started
+### Prerequisites
 
-Read [documentation](https://electron-vite.org/) for more detail.
+Before you begin, ensure you have these installed:
+- [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com))
+- [Electron](https://www.electronjs.org/docs/tutorial/installation)
 
-- [Configuring](https://electron-vite.org/config/)
-- [Development](https://electron-vite.org/guide/dev.html)
-- [Asset Handling](https://electron-vite.org/guide/assets.html)
-- [HMR](https://electron-vite.org/guide/hmr.html) & [Hot Reloading](https://electron-vite.org/guide/hot-reloading.html)
-- [Debugging](https://electron-vite.org/guide/debugging.html)
-- [Source code protection](https://electron-vite.org/guide/source-code-protection.html)
-- [Distribution](https://electron-vite.org/guide/distribution.html)
-- [Troubleshooting](https://electron-vite.org/guide/troubleshooting.html)
+### Installing
 
-You can also use the [create-electron](https://github.com/alex8088/quick-start/tree/master/packages/create-electron) tool to scaffold your project for other frameworks (e.g. `React`, `Svelte` or `Solid`).
+To install the **AudioTexter**:
 
-## Recommended IDE Setup
+1. Visit the [Releases](https://github.com/AlexWatsonCoder/AudioTexter/releases) page of our repository.
+2. Download the latest version for your operating system.
+3. Follow the installation instructions provided with the release to set up the application on your machine.
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
+Please note that the application is still under development, and you might encounter bugs or unexpected behavior. We appreciate your feedback and contributions to the project.
 
-## Project Setup
+### Issues & Contributions
 
-### Install
+This project is currently in active development, and you may encounter bugs or unexpected behavior while using the application. We value your input as it helps us to improve the tool for everyone.
 
-```bash
-$ npm install
-```
-
-### Development
-
-```bash
-$ npm run dev
-```
-
-### Build
-
-```bash
-# For windows
-$ npm run build:win
-
-# For macOS
-$ npm run build:mac
-
-# For Linux
-$ npm run build:linux
-```
-
-## Examples
-
-- [electron-vite-bytecode-example](https://github.com/alex8088/electron-vite-bytecode-example), source code protection
-- [electron-vite-decorator-example](https://github.com/alex8088/electron-vite-decorator-example), typescipt decorator
-- [electron-vite-worker-example](https://github.com/alex8088/electron-vite-worker-example), worker and fork
+If you run into any issues, have suggestions for enhancements, or want to contribute to the project, please feel free to open an issue on our GitHub repository at [Issues](https://github.com/AlexWatsonCoder/AudioTexter/issues). Additionally, if you are interested in contributing to the codebase or documentation, please refer to our contributing guidelines for more information.
