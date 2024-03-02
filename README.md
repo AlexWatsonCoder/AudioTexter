@@ -14,12 +14,6 @@ This Media Subtitler application harnesses the power of [Whisper](https://openai
 - **Customizable Model**: Adjust model settings according to your needs.
 - **Cross-Platform**: Runs on Windows and macOS.
 
-### Prerequisites
-
-Before you begin, ensure you have these installed:
-- [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com))
-- [Electron](https://www.electronjs.org/docs/tutorial/installation)
-
 ### Installing
 
 To install the **AudioTexter**:
@@ -29,6 +23,18 @@ To install the **AudioTexter**:
 3. Follow the installation instructions provided with the release to set up the application on your machine.
 
 Please note that the application is still under development, and you might encounter bugs or unexpected behavior. We appreciate your feedback and contributions to the project.
+
+
+### Development
+
+Before you begin, ensure you have these installed:
+- [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com))
+- [Electron](https://www.electronjs.org/docs/tutorial/installation)
+
+```
+npm install
+npm run dev
+```
 
 ### Issues & Contributions
 
