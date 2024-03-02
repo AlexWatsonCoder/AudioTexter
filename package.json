@@ -1,6 +1,6 @@
 {
   "name": "AudioTexter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "An application that uses Whisper to generate subtitles for media.",
   "main": "./out/main/index.js",
   "author": "xiaod.me",
